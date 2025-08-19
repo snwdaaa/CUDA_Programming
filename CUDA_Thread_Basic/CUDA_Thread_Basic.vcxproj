@@ -11,7 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="Thread_Layout.cu" />
+    <CudaCompile Include="Thread_Layout.cu">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="VectorAddition_ThreadLayout.cu" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{47579426-0EB1-D13F-048F-6B1028A7A83E}</ProjectGuid>
