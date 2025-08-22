@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="Thread_Layout.cu">
+      <Filter>Chapter4</Filter>
+    </CudaCompile>
+    <CudaCompile Include="VectorAddition_ThreadLayout.cu">
+      <Filter>Chapter4</Filter>
+    </CudaCompile>
+    <CudaCompile Include="VectorAddition_Indexing.cu">
+      <Filter>Chapter5</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Chapter4">
+      <UniqueIdentifier>{5e164fef-cc07-48d6-8162-a24dfa7b4d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chapter5">
+      <UniqueIdentifier>{43e8df43-43a8-4506-bc80-547ef0da30d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DS_definitions.h" />
+    <ClInclude Include="DS_timer.h" />
+    <ClInclude Include="ThreadIndexing.cuh">
+      <Filter>Chapter5</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DS_timer.cpp" />
+  </ItemGroup>
+</Project>
